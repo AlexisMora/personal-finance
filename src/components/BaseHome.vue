@@ -1,5 +1,12 @@
+<script setup lang="ts">
+  import MainLayout from '@/components/Layouts/MainLayout.vue'
+  import BaseHeader from '@/components/BaseHeader.vue'
+</script>
+
 <template>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <MainLayout>
+    <template #header>
+      <BaseHeader />
+    </template>
+  </MainLayout>
 </template>
